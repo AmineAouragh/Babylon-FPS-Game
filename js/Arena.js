@@ -1,10 +1,10 @@
 Arena = function(game) {
-    // Appel des variables nécéssaires
+    // The necessary variables
     this.game = game;
     var scene = game.scene;
 
-    // Création de notre lumière principale
-    var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
+    // Create the main light of the screen
+    var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene)
 
     var ground = BABYLON.Mesh.CreateGround("ground1", 20, 20, 2, scene)
     ground.scaling = new BABYLON.Vector3(2, 10, 3)
@@ -30,4 +30,4 @@ Arena = function(game) {
     var cylinder = BABYLON.Mesh.CreateCylinder("cyl1", 20, 5, 5, 20, 4, scene)
     cylinder.position.y = 20/2
 
-};
+}
