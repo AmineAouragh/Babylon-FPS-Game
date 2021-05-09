@@ -1,0 +1,15 @@
+@mixin full-size {
+  height: 100%;
+  width: 100%;
+}
+
+html, body {
+  @include full-size;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  #renderCanvas {
+    @include full-size;
+    touch-action: none;
+  }
+}
