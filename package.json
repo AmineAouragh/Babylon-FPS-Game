@@ -1,0 +1,22 @@
+{
+  "name": "babylon",
+  "version": "1.0.0",
+  "description": "This game is an Webgl FPS Multiplayer built in Babylonjs",
+  "main": "js/Game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "keywords": [
+    "webgl",
+    "3d",
+    "babylon",
+    "game",
+    "web"
+  ],
+  "author": "Amine Aouragh",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
