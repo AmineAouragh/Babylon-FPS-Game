@@ -1,8 +1,3 @@
-const cloneForm = (originalForm, name) => {
-  let newForm = originalForm.clone(name)
-  return newForm
-}
-
 Arena = function(game) {
     // The necessary variables
     this.game = game;
@@ -20,15 +15,15 @@ Arena = function(game) {
     mainBox.position = new BABYLON.Vector3(5, ((3/2)*mainBox.scaling.y), 5)
     mainBox.rotation.y = (Math.PI*45)/180
 
-    cloneForm(mainBox, "box2")
+    var mainBox2 = mainBox.clone("box2")
     mainBox2.scaling.y = 2
     mainBox2.position = new BABYLON.Vector3(5, ((3/2)*mainBox2.scaling.y), -5)
 
-    cloneForm(mainBox, "box3")
+    var mainBox3 = mainBox.clone("box3")
     mainBox3.scaling.y = 3
     mainBox3.position = new BABYLON.Vector3(-5, ((3/2)*mainBox3.scaling.y), -5)
 
-    cloneForm(mainBox, "box4")
+    var mainBox4 = mainBox.clone("box4")
     mainBox4.scaling.y = 4
     mainBox4.position = new BABYLON.Vector3(-5, ((3/2)*mainBox4.scaling.y), 5)
 
@@ -36,4 +31,3 @@ Arena = function(game) {
     cylinder.position.y = 20/2
 
 }
-
